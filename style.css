@@ -1,0 +1,95 @@
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+h1{
+    font-size: 15px;
+    text-align: center;
+}
+
+.headers {
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 40%;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #00bcd4;
+}
+
+.her {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.her .her {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* RSECTION FOR MYY SMALL SCRENS */
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .links a {
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .her {
+        display: flex;
+    }
+
+    .links.active {
+        display: flex;
+    }}
+
+    aside img{
+        height: 20%;
+        width: 40%;
+    }

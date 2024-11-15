@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nakaziba Ruth kakaire</title>
+</head>
+<body>
+    <h1>NAKAZIBA RUTH KAKAIRE-BLIS STUDENT AT COCIS</h1>
+    <div class="headers">
+        <nav>
+            <div class="logo">
+                <img src="photo.jpg" alt="Logo">
+            </div>
+            <ul class="links">
+                <a href="#"><li>About Me</li></a>
+                <a href="#"><li>Schools</li></a>
+                <a href="#"><li>Hobbies</li></a>
+                <a href="#"><li>Work Experience</li></a>
+            </ul>
+            <div class="her">
+                <div class="her"></div>
+                <div class="her"></div>
+                <div class="her"></div>
+            </div>
+        </nav>
+    </div>
+    <aside style="display: flex;">
+        <img src="fullphoto.jpg" alt=""> 
+        <P> ABOUT ME<br>Am Nakaziba Ruth a student at makerere university<BR> doing a bacherlors degree <br> in library and informatuion science<P>
+    </aside>
+    
+
+
+    <script>
+        const hamburger = document.querySelector('.her');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
